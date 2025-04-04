@@ -1,6 +1,6 @@
 # Modern PHP Development Environment with Docker
 
-A comprehensive Docker-based development environment for modern PHP applications, featuring a complete stack with MySQL, Redis, RabbitMQ, and Nginx. This project aims to provide a consistent, reproducible development environment that closely mirrors production.
+A comprehensive Docker-based development environment for modern PHP applications with Laravel, featuring a complete stack with MySQL, Redis, RabbitMQ, and Nginx. This project aims to provide a consistent, reproducible development environment that closely mirrors production.
 
 ## 🎯 Project Goals
 
@@ -60,6 +60,7 @@ A comprehensive Docker-based development environment for modern PHP applications
 This development environment includes:
 
 ### Backend
+- **Laravel 11.9**: Modern PHP Framework
 - **PHP 8.2**: With essential extensions:
   - intl, zip, apcu, opcache
   - pcov (for code coverage)
