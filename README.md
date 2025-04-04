@@ -21,8 +21,8 @@ A comprehensive Docker-based development environment for modern PHP applications
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-project.git
-   cd your-project
+   git clone https://github.com/PortilloDev/opentrackerapi.git
+   cd opentrackerapi
    ```
 
 2. Configure environment variables:
@@ -182,10 +182,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [your-email@example.com](mailto:your-email@example.com)
+Your Name - [ivan.portillo@notasweb.me](mailto:ivan.portillo@notasweb.me)
 
-Project Link: [https://github.com/your-username/your-project](https://github.com/your-username/your-project)
+Project Link: [https://github.com/PortilloDev/opentrackerapi.git](https://github.com/PortilloDev/opentrackerapi.git)
 
 ---
 
-⭐️ Developed with ❤️ by [Your Name/Company]
+⭐️ Developed with ❤️ by [Iván Portillo](https://www.linkedin.com/in/ivan-portillo-perez/)
