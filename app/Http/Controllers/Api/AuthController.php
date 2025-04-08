@@ -7,11 +7,43 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+use OpenApi\Annotations as OA;
 
+
+/**
+ * @OA\Schema(
+ *     schema="Authentication",
+ *     required={"email", "password"},
+ *     @OA\Property(property="email", type="string", format="email", example="john@doe.com"),
+ *     @OA\Property(property="password", type="string"),
+ * )
+ */
 class AuthController extends Controller
 {
     /**
-     * Handle an authentication attempt.
+     * @OA\Post(
+     *     path="/login",
+     *     summary="Login and get a JWT token",
+     *     description="Login and get a JWT token",
+     *     operationId="LoginUser",
+     *     tags={"Authentication"},
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(
+     *              required={"email", "password"},
+     *              @OA\Property(property="email", type="string", format="email", example="john@doe.com"),
+     *              @OA\Property(property="password", type="string")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=201,
+     *         description="Login successful"
+     *     ),
+     *     @OA\Response(
+     *         response=401,
+     *         description="Unauthenticated"
+     *     )
+     * )
      */
     public function login(Request $request)
     {
@@ -40,7 +72,21 @@ class AuthController extends Controller
     }
 
     /**
-     * Log the user out (Invalidate the token).
+     * @OA\Post(
+     *     path="/logout",
+     *     summary="logout user",
+     *     description="logout user",
+     *     operationId="logout",
+     *     tags={"Authentication"},
+     *     @OA\Response(
+     *         response=200,
+     *         description="logout successful",
+     *     ),
+     *     @OA\Response(
+     *         response=401,
+     *         description="Unauthenticated"
+     *     )
+     * )
      */
     public function logout(Request $request)
     {

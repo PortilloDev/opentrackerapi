@@ -10,7 +10,7 @@ use App\Http\Controllers\Controller;
  *     version="1.0.0",
  *     description="Open Source Activity Tracking API - A powerful alternative to Strava and Garmin Connect",
  *     @OA\Contact(
- *         email="contact@trackapi.com",
+ *         email="contacto@notasweb.me",
  *         name="TrackAPI Support"
  *     ),
  *     @OA\License(
@@ -18,12 +18,12 @@ use App\Http\Controllers\Controller;
  *         url="https://opensource.org/licenses/MIT"
  *     )
  * )
- * 
+ *
  * @OA\Server(
  *     url="/api/v1",
  *     description="API Server"
  * )
- * 
+ *
  * @OA\SecurityScheme(
  *     securityScheme="bearerAuth",
  *     type="http",
